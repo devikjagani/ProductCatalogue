@@ -93,7 +93,7 @@ window.PRODUCTS = [
     name: "Pani Puri",
     code: "PRD-009",
     photos: [
-      "assets/products/pani-puri.jpeg",
+      "assets/products/panipuri.jpeg",
     ]
   },
   {
