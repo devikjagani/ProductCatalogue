@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Explore our product collection.">
+  <title>Product Catalog</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img id="brandLogo" class="brand-logo hidden" alt="Company logo">
+      <span id="brandName">YOUR COMPANY</span>
+    </a>
+    <nav class="main-nav">
+      <a class="nav-link active" href="index.html">Products</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">OUR COLLECTION</p>
+      <h1>Explore our products</h1>
+      <p class="hero-copy">Discover our products and find the right one for you.</p>
+    </section>
+
+    <section id="productGrid" class="product-grid" aria-label="Product catalog"></section>
+    <section id="emptyState" class="empty-state hidden">
+      <span class="empty-mark">◇</span>
+      <h2>Products coming soon</h2>
+      <p>Our product collection will be updated shortly.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong id="footerCompany">YOUR COMPANY</strong>
+        <p id="footerAddress"></p>
+      </div>
+      <div class="footer-contact">
+        <a id="footerPhone" href="#">Mobile: +91 00000 00000</a>
+        <a id="footerEmail" href="#">Email: hello@example.com</a>
+      </div>
+      <a class="footer-contact-link" href="contact.html">Contact us ↗</a>
+    </div>
+    <div class="copyright">© <span id="year"></span> <span id="copyrightCompany">YOUR COMPANY</span>. All rights reserved.</div>
+  </footer>
+
+  <div id="gallery" class="gallery-modal hidden" role="dialog" aria-modal="true" aria-label="Product photo gallery">
+    <button class="gallery-close" id="closeGallery" aria-label="Close gallery">×</button>
+    <button class="gallery-arrow prev" id="prevPhoto" aria-label="Previous photo">‹</button>
+    <div class="gallery-stage">
+      <img id="galleryImage" alt="">
+      <div class="gallery-caption">
+        <strong id="galleryName"></strong>
+        <span id="galleryCode"></span>
+        <div id="galleryDots" class="gallery-dots"></div>
+      </div>
+    </div>
+    <button class="gallery-arrow next" id="nextPhoto" aria-label="Next photo">›</button>
+  </div>
+  <script src="site-config.js"></script>
+  <script src="products.js"></script>
+  <script src="catalog.js"></script>
+</body>
+</html>
