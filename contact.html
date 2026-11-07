@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Contact our company.">
+  <title>Contact Us</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <img id="brandLogo" class="brand-logo hidden" alt="Company logo">
+      <span id="brandName">YOUR COMPANY</span>
+    </a>
+    <nav class="main-nav">
+      <a class="nav-link" href="index.html">Products</a>
+      <a class="nav-link active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page-shell contact-shell">
+    <section class="hero contact-hero">
+      <p class="eyebrow">WE'RE HERE TO HELP</p>
+      <h1>Get in touch</h1>
+      <p class="hero-copy">Have a question about a product? Contact our team.</p>
+    </section>
+
+    <section class="contact-layout">
+      <div class="contact-details">
+        <article class="contact-item">
+          <span class="contact-icon">⌖</span>
+          <div><span class="contact-label">Contact person</span><h2 id="contactPerson">Your Name</h2></div>
+        </article>
+        <article class="contact-item">
+          <span class="contact-icon">☎</span>
+          <div><span class="contact-label">Call us</span><a id="contactPhone" href="#">+91 00000 00000</a></div>
+        </article>
+        <article class="contact-item">
+          <span class="contact-icon">✉</span>
+          <div><span class="contact-label">Email</span><a id="contactEmail" href="#">hello@example.com</a></div>
+        </article>
+        <article class="contact-item">
+          <span class="contact-icon">⌂</span>
+          <div><span class="contact-label">Address</span><p id="contactAddress">Your full business address</p></div>
+        </article>
+        <a id="whatsappLink" class="whatsapp-button" href="#" target="_blank" rel="noopener">Chat on WhatsApp ↗</a>
+      </div>
+
+      <div class="map-panel">
+        <div class="map-heading"><div><span class="contact-label">FIND US</span><h2>Our location</h2></div><a id="mapOpenLink" href="#" target="_blank" rel="noopener">Open in Google Maps ↗</a></div>
+        <iframe id="googleMap" title="Company location on Google Maps" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section class="contact-note">
+      <h2>Need product information?</h2>
+      <p>Share the product name or product code with us when you contact our team. We will be happy to assist you.</p>
+      <a href="index.html" class="text-link">Browse our products ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong id="footerCompany">YOUR COMPANY</strong>
+        <p id="footerAddress"></p>
+      </div>
+      <div class="footer-contact">
+        <a id="footerPhone" href="#">Mobile: +91 00000 00000</a>
+        <a id="footerEmail" href="#">Email: hello@example.com</a>
+      </div>
+      <a class="footer-contact-link" href="contact.html">Contact us ↗</a>
+    </div>
+    <div class="copyright">© <span id="year"></span> <span id="copyrightCompany">YOUR COMPANY</span>. All rights reserved.</div>
+  </footer>
+  <script src="site-config.js"></script>
+  <script src="contact.js"></script>
+</body>
+</html>
